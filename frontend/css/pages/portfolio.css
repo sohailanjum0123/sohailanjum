@@ -1,0 +1,15 @@
+.img-hover-wrapper {
+      overflow: hidden;
+      height: 300px; /* container height */
+      position: relative;
+      cursor: pointer;
+    }
+    .hover-img {
+      width: 100%;
+      height: 450px; /* image height > container height */
+      object-fit: cover;
+      transition: transform 1.2s ease; /* smooth scrolling */
+    }
+    .hover-up {
+      transform: translateY(-150px); /* scroll up by the difference */
+    }
