@@ -1,0 +1,21 @@
+/* css/components/header.css */
+.navbar-brand img {
+  height: 50px;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.btn-appointment {
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 25px;
+  padding: 8px 20px;
+  transition: background-color 0.3s;
+}
+
+.btn-appointment:hover {
+  background-color: #0056b3;
+  color: #fff;
+}

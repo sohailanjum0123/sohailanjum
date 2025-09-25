@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smooth Image Hover Scroll</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .img-hover-wrapper {
+      overflow: hidden;
+      height: 300px; /* container height */
+      position: relative;
+      cursor: pointer;
+    }
+
+    .hover-img {
+      width: 100%;
+      height: 450px; /* image height > container height */
+      object-fit: cover;
+      transition: transform 1.2s ease; /* smooth scrolling */
+    }
+
+    .hover-up {
+      transform: translateY(-150px); /* scroll up by the difference */
+    }
+  </style>
+</head>
+<body>
+
+<div class="container my-5">
+  <div class="row g-4">
+    <div class="col-md-3">
+      <div class="img-hover-wrapper">
+        <img src="https://storage.googleapis.com/msgsndr/6Bp6xq8xMkkdrYKY8HSl/media/68d51fc13bcc7b1a925d4fb0.png" class="hover-img" alt="Image 1">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="img-hover-wrapper">
+        <img src="https://storage.googleapis.com/msgsndr/6Bp6xq8xMkkdrYKY8HSl/media/68d51fc13bcc7b1a925d4fb0.png" class="hover-img" alt="Image 2">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="img-hover-wrapper">
+        <img src="https://storage.googleapis.com/msgsndr/6Bp6xq8xMkkdrYKY8HSl/media/68d51fc13bcc7b1a925d4fb0.png" class="hover-img" alt="Image 3">
+      </div>
+    </div>
+    <div class="col-md-3">
+      <div class="img-hover-wrapper">
+        <img src="https://storage.googleapis.com/msgsndr/6Bp6xq8xMkkdrYKY8HSl/media/68d51fc13bcc7b1a925d4fb0.png" class="hover-img" alt="Image 4">
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    $('.img-hover-wrapper').hover(
+      function() {
+        $(this).find('.hover-img').addClass('hover-up');
+      },
+      function() {
+        $(this).find('.hover-img').removeClass('hover-up');
+      }
+    );
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,16 @@
+.services-hero {
+  background: url('../assets/images/hero.jpg') center/cover no-repeat;
+}
+
+.services-hero h1, .services-hero p {
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+}
+
+.card i {
+  color: #007bff;
+}
+
+.services-cta {
+  background: #f8f9fa;
+}
